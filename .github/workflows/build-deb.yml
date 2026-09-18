@@ -20,7 +20,9 @@ jobs:
         run: git clone --recursive https://github.com/theos/theos.git "$THEOS"
 
       - name: Install iOS SDKs
-        run: git clone --depth 1 https://github.com/theos/sdks.git "$THEOS/sdks"
+        run: |
+          rm -rf "$THEOS/sdks"
+          git clone --depth 1 https://github.com/theos/sdks.git "$THEOS/sdks"
 
       - name: Build rootless package
         run: make package FINALPACKAGE=1
