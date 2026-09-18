@@ -1,7 +1,7 @@
 Package: com.amywhile.macspoof
 Name: MacSpoof
-Version: 0.2.1
-Architecture: iphoneos-arm
+Version: 0.3.0
+Architecture: iphoneos-arm64
 Description: Spoof Mac Address on iOS
 Maintainer: Amy While
 Author: Amy While

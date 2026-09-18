@@ -1,5 +1,6 @@
 export ARCHS = arm64 arm64e
-export TARGET = iphone:clang:13.3:14.0
+export TARGET = iphone:clang:latest:14.0
+export THEOS_PACKAGE_SCHEME = rootless
 export THEOS_DEVICE_IP = 192.168.0.43
 export THEOS_DEVICE_PORT = 22
 
